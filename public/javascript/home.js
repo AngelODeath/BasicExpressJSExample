@@ -6,13 +6,17 @@
 */
 
 $(function() {
-    var homebutton = $("a#home");
+    var seachvalue = $('input#searchval');
+    var searchbutton = $("a#search");
     
-    homebutton.click(function() {
+    searchbutton.click(function() {
         console.log('Sending ajax request to /users');
         $.ajax({
             url: 'users',
             type: 'GET',
+            data: {
+                'search-value': seachvalue.val()
+            },
             dataType: 'text/html',
             success: function(result) {
                 console.log(result);

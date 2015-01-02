@@ -3,15 +3,10 @@ extends layout
 block stylesheets
   link(rel='stylesheet', href='/stylesheets/home.css')
 
-block topmenu
-  ul.nav.navbar-nav
-    li: a#music(href='#') Music
-    li: a#art(href='#') Art
-    li: a#videos(href='#') Videos
-    li: a#culture(href='#') Culture
-
 block content
   .container
+    input#searchval
+    a#search(href="#") Search
   
 block sidebar
   ol

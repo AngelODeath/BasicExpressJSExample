@@ -12,3 +12,12 @@
     height: 100%;
     width: 100%;
 }
+
+#searchval {
+    float: left;
+    display: block;
+}
+#home {
+    float: left;
+    display: block;
+}
